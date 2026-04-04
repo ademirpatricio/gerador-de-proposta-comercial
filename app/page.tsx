@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-zinc-950 to-black text-white flex flex-col justify-between">
+    <main className="min-h-screen bg-gradient-to-b from-slate-100 to-slate-200 text-zinc-900 flex flex-col justify-between">
 
       {/* HERO */}
       <section className="flex-1 flex items-center px-6 py-20">
@@ -10,11 +10,20 @@ export default function Home() {
 
           {/* LEFT - COPY */}
           <div>
+
+            {/* LOGO */}
+            <div className="flex items-center gap-2 mb-6">
+              <span className="text-2xl">⚡</span>
+              <span className="text-lg font-semibold tracking-tight">
+                Proposta <span className="text-emerald-600">Rápida</span>
+              </span>
+            </div>
+
             <h1 className="text-3xl md:text-4xl font-bold leading-tight tracking-tight">
               Pare de perder clientes com propostas mal feitas
             </h1>
 
-            <p className="mt-4 text-zinc-400 text-lg">
+            <p className="mt-4 text-zinc-600 text-lg">
               Crie propostas profissionais em minutos e impressione seus clientes sem esforço.
             </p>
 
@@ -23,28 +32,28 @@ export default function Home() {
 
               <div className="flex items-start gap-3">
                 <span className="mt-1">⚡</span>
-                <p className="text-zinc-300 leading-relaxed">
+                <p className="text-zinc-700 leading-relaxed">
                   Crie propostas em menos de 2 minutos
                 </p>
               </div>
 
               <div className="flex items-start gap-3">
                 <span className="mt-1">📄</span>
-                <p className="text-zinc-300 leading-relaxed">
+                <p className="text-zinc-700 leading-relaxed">
                   Gere um PDF profissional pronto para enviar
                 </p>
               </div>
 
               <div className="flex items-start gap-3">
                 <span className="mt-1">💼</span>
-                <p className="text-zinc-300 leading-relaxed">
+                <p className="text-zinc-700 leading-relaxed">
                   Ideal para freelancers e pequenas agências
                 </p>
               </div>
 
               <div className="flex items-start gap-3">
                 <span className="mt-1">🟢</span>
-                <p className="text-zinc-300 leading-relaxed">
+                <p className="text-zinc-700 leading-relaxed">
                   100% gratuito, sem cadastro
                 </p>
               </div>
@@ -55,7 +64,7 @@ export default function Home() {
             <div className="mt-8">
               <Link
                 href="/create"
-                className="w-full text-center inline-block bg-emerald-700 text-white px-6 py-3 rounded-xl font-semibold text-lg hover:bg-emerald-500 transition-all"
+                className="w-full text-center inline-block bg-emerald-600 text-white px-6 py-3 rounded-xl font-semibold text-lg hover:bg-emerald-500 transition-all"
               >
                 Criar minha proposta agora
               </Link>
@@ -73,7 +82,7 @@ export default function Home() {
               Exemplo de proposta gerada
             </p>
 
-            <div className="bg-white text-black p-14 rounded-2xl shadow-[0_30px_80px_rgba(0,0,0,0.6)]">
+            <div className="bg-white text-black p-14 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-zinc-200">
 
               <div className="flex justify-between border-b pb-4">
                 <div>
@@ -115,12 +124,12 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="text-center text-sm text-zinc-600 py-8 border-t border-zinc-800">
+      <footer className="text-center text-sm text-zinc-500 py-8 border-t border-zinc-200">
         ©2026{" "}
         <a
-          href="https://malabaresmkt.com"
+          href="https://malabares.com.br"
           target="_blank"
-          className="underline hover:text-white"
+          className="underline hover:text-zinc-900"
         >
           Malabares MKT
         </a>{" "}
